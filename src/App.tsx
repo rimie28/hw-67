@@ -1,12 +1,11 @@
-import KeypadLock from './containers/KeypadLock/KeypadLock.tsx';
+import KeypadLock from "./containers/KeypadLock/KeypadLock.tsx";
 
 function App() {
-
   return (
     <div className="App">
-      <KeypadLock/>
+      <KeypadLock />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
