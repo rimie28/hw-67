@@ -23,11 +23,12 @@ const keypadLockSlice = createSlice({
         state.input += action.payload;
       }
     },
-    deleteInput: (state, action) => {
+    deleteInput: (state) => {
       state.input = state.input.slice(0, -1);
     },
-    checkPin: (state, action) => {
+    checkPin: (state) => {
       state.access = state.input === state.pin ? "pass" : "wrong";
+      state.input =''
     }
   }
 })
